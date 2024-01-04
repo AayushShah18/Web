@@ -1,2 +1,5 @@
-console.log('Hello noob');
-console.log('module');
+const fs = require("fs");
+fs.writeFile("message.txt","Hello",(err)=>{
+    if(err) throw err;
+    console.log('File saved successfully');
+})
